@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carousel</title>
+</head>
+<body>
+    
+<div id="vueApp" class="container">
+    <div class="mainContent"><!-- main img-->
+        <div v-for="(elem, index) in items" class="item" :class="attivaClasse(index)">
+            <img :src="elem">
+        </div>
+    </div>
+
+    <div class="sectionSelect"><!-- container -->
+        <div class="select"></div><!--  slider img container-->
+        <div class="arrow top">&#8593;</div>
+        <div class="arrow bottom">&#8595;</div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/func.js"></script>
+</body>
+</html>
