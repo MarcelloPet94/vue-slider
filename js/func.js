@@ -1,5 +1,3 @@
-
-
 let app = new Vue ({
     el: "#vueApp",
     data:
@@ -22,6 +20,22 @@ let app = new Vue ({
                 return "active";
             }
             return "";
+        },
+        nextImg : function()
+        {
+            this.attiva++;
+            if(this.attiva == this.items.length)
+            {
+                this.attiva = 0
+            }
+        },
+        prevImg : function()
+        {
+            this.attiva--;
+            if(this.attiva < 0)
+            {
+                this.attiva = this.items.length - 1;
+            }
         }
-    } 
+    }
 });
