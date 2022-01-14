@@ -18,6 +18,7 @@ let app = new Vue ({
             if(indiceImg == this.attiva)
             {
                 return "active";
+                
             }
             return "";
         },
