@@ -35,6 +35,7 @@ let app = new Vue ({
             if(this.attiva < 0)
             {
                 this.attiva = this.items.length - 1;
+                console.log(this.attiva = this.items.length - 1)
             }
         }
     }

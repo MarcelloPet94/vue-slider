@@ -42,7 +42,7 @@
 .sectionSelect {
     position: relative;
     width: 20%;
-    background-color: cornflowerblue;
+    background-color: #010101;
 }
 
 .news {
@@ -50,6 +50,12 @@
     align-content: flex-start;
     height: 5vw;
     overflow: hidden;
+    opacity: 0.5;
+}
+
+.news.active {
+    opacity: 1;
+    border: 1px solid #fff;
 }
 
 .news img {

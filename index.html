@@ -17,7 +17,11 @@
     </div>
 
     <div class="sectionSelect"><!-- container -->
-        <div class="select"></div><!--  slider img container-->
+        <div class="select">
+            <div v-for="(elem, index) in items" class="news" :class="attivaClasse(index)">
+                <img :src="elem">
+            </div>
+        </div><!--  slider img container-->
         <div class="arrow top" @click="nextImg">&#8593;</div>
         <div class="arrow bottom" @click="prevImg">&#8595;</div>
     </div>
